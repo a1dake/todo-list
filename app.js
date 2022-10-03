@@ -26,8 +26,8 @@ function addMessage() {
     todo_list.forEach(function(item, index){
         addMessage += `
         <li id='todo_${index}'>
-            <input type='checkbox' id='todo_${index}' ${item.checked ?  'checked': ''}>
-            <label for='todo_${index}'>${item.todo}</label>
+            <input class='checkbox' type='checkbox' id='todo_${index}' ${item.checked ?  'checked': ''}>
+            <label class='label' for='todo_${index}'>${item.todo}</label>
         </li>`;
 
         todos.innerHTML = addMessage;
